@@ -5,8 +5,13 @@
       <script src="https://code.angularjs.org/1.3.11/angular.js"></script>
       <script src="app.js"></script>
   </head>
-  <body ng-controller="MyCtrl as vm">
-    <tr ng-repeat=number>
-    {{ vm.array[2] }}
+  <body>
+    <table ng-controller="MyCtrl as vm">
+      <tr ng-repeat="numberA in vm.numbers">
+        <td ng-repeat="numberB in vm.numbers">
+          {{ numberA * numberB }}
+        </td>
+      </tr>
+    </table>
   </body>
 </html>

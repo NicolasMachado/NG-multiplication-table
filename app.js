@@ -1,5 +1,5 @@
 angular.module('myApp', [])
   .controller('MyCtrl', function() {
     var vm = this;
-    vm.number = 5;
+    vm.numbers = [1,2,3,4];
   });
